@@ -9,6 +9,7 @@
     --card-bg: hsl(0, 0%, 100%);
     --border-color: hsl(0, 0%, 7%);
     --text-color: hsl(0, 0%, 42%);
+    --box-shadow: 8px 8px 1px rgba(0, 0, 0, 1);
 }
 
 body {
@@ -28,7 +29,7 @@ body {
     background-color: var(--card-bg);
     padding: 1.5rem;
     border: 1px solid var(--border-color);
-    box-shadow: 8px 8px 1px rgba(0, 0, 0, 1);
+    box-shadow: var(--box-shadow);
     border-radius: 1rem;
     margin: 0 1rem;
 }
@@ -73,7 +74,7 @@ body {
     color: var(--text-color);
 }
 .text-holder img {
-    width: 24px;
+    width: calc(24 * 1rem / 16);
 }
 
 .text-holder span {
