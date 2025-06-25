@@ -17,7 +17,6 @@ body {
     font-weight: 800;
     width: 100%;
     height: 100vh;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,10 +25,9 @@ body {
 .card {
     width: 25rem;
     background-color: var(--card-bg);
-    padding: 1.5rem 1rem;
+    padding: 1.5rem;
     border: 1px solid var(--border-color);
-    /* box-shadow: 0 0.5rem 1rem rgba(var(--border-color), 0.1); */
-    /* display: flex; */
+    box-shadow: 8px 8px 1px rgba(0, 0, 0, 1);
     border-radius: 1rem;
 }
 
@@ -45,14 +43,13 @@ body {
 
 .image-holder img {
     width: 100%;
-    /* height: 80%; */
     object-fit: cover;
     border-radius: 0.5rem;
 }
 
 .image-holder button {
     border: none;
-    padding: 0.5rem;
+    padding: 0.5rem 0.75rem;
     border-radius: 0.25rem;
     background-color: var(--background);
     margin-bottom: 1rem;
