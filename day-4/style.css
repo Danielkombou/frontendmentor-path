@@ -7,17 +7,21 @@
 :root {
     --bg-color: hsl(330, 100%, 98%);
     --white: hsl(0, 0%, 100%);
+    --stone-deep: hsl(24, 5%, 18%);
+    --stone-moderate: hsl(30, 10%, 34%);
+    --stone-light: hsl(30, 18%, 87%);
+    --rose-text: hsl(330, 100%, 20%);
+    --brown-text: hsl(14, 45%, 36%);
 }
 
 body {
     background-color: hsl(330, 100%, 98%);
-    font-family: 'Young Serif', serif;
-    color: hsl(330, 100%, 20%);
+    font-family: 'Outfit', sans-serif;
     font-size: 1rem;
 }
 
 main {
-    width: 40%;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,4 +44,67 @@ img {
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
+}
+
+.omolette {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    border-bottom: 1px solid var(--stone-light);
+}
+
+.ingredients {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.ingredients span {
+    color: var(--stone-deep);
+    font-size: 1rem;
+}
+
+.prep-time {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    background: var(--bg-color);
+}
+
+.prep-time h3 {
+    color: var(--rose-text);
+}
+.prep-time ul {
+    padding-left: 1.5rem;
+}
+
+.prep-time ul li {
+    font-weight: bold;
+}
+
+.prep-time ul li span {
+    font-weight: normal;
+    color: var(--stone-deep);
+}
+
+.small-ingred h2 {
+    color: var(--brown-text);
+}
+
+.small-ingred ul {
+    padding: 1rem;
+    padding-left: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.small-ingred ul li {
+    color: var(--stone-deep);
+    font-size: 0.95rem;
+    font-weight: 400;
 }
