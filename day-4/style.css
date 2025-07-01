@@ -27,8 +27,9 @@ main {
     align-items: center;
     margin: 0 auto;
     margin-top: 3rem;
+    margin-bottom: 3rem;
     border-radius: 0.5rem;
-    padding: 1rem;
+    padding: 2rem;
     background-color: var(--white);
 }
 img {
@@ -42,7 +43,6 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     gap: 0.5rem;
 }
 
@@ -90,9 +90,13 @@ img {
     font-weight: normal;
     color: var(--stone-deep);
 }
+.small-ingred {
+    padding-bottom: 1rem;
+}
 
-.small-ingred h2 {
+h2 {
     color: var(--brown-text);
+    font-family: 'Young Serif', serif;
 }
 
 .small-ingred ul {
@@ -105,6 +109,62 @@ img {
 
 .small-ingred ul li {
     color: var(--stone-deep);
-    font-size: 0.95rem;
+    font-size: 1rem;
     font-weight: 400;
+}
+
+.instructions {
+    border-bottom: 1px solid var(--stone-light);
+    padding: 1rem 0;
+}
+
+.instructions ol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    padding-left: 1.5rem;
+}
+
+.instructions ol li {
+    font-size: 1rem;
+    font-weight: bold;
+}
+.instructions ol li span {
+    font-weight: normal;
+    color: var(--stone-deep);
+}
+
+.nutrition {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.25rem 0;
+}
+
+.nutrition p {
+    color: var(--stone-moderate);
+    font-size: 1rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+
+}
+table tr:not(:last-child) {
+    border-bottom: 1px solid var(--stone-light);
+}
+
+table tr td {
+    padding: 0.75rem 1.5rem;
+    color: var(--stone-moderate);
+}
+
+table tr td:nth-child(2) {
+    color: var(--brown-text);
+    font-weight: bold;
 }
