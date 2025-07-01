@@ -168,3 +168,16 @@ table tr td:nth-child(2) {
     color: var(--brown-text);
     font-weight: bold;
 }
+
+@media screen and (min-width: 1440px) {
+    main {
+        width: 80%;
+        margin-top: 8rem;
+    }
+    .omolette h1 {
+        font-size: calc(20 * 1rem / 16);
+    }
+    .omolette p {
+        font-size: calc(16 * 1rem / 16);
+    }
+}
