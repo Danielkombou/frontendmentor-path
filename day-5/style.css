@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-cream: hsl(30, 38%, 92%);
+    --bg-white: hsl(0, 0%, 100%);
+    --text-grey: hsl(228, 12%, 48%);
+    --text-black: hsl(212, 21%, 14%);
+    --text-green: hsl(158, 36%, 37%);
+    --deep-green: hsl(158, 42%, 18%);
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+
+}
