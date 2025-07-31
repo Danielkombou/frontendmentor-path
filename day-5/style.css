@@ -12,44 +12,131 @@
     --text-green: hsl(158, 36%, 37%);
     --deep-green: hsl(158, 42%, 18%);
 }
-
-body{
-    font-family: "Montserrat", sans-serif;
-    background-color: var(--bg-cream);
+body {
+  background-color: var(--bg-cream);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 0;
+  min-height: 100vh;
 }
 
-main {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    height: 100vh;
+.card {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--bg-white);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  width: 100%;
 }
 
-.product-card{
-    display: flex;
-    align-items: center;
-    width: 60%;
-    height: 40rem;
-    background-color: var(--bg-white);
+.card-image img {
+  width: 300px;
+  height: 100%;
+  object-fit: cover;
 }
 
-.product-image{
-    flex: 1;
+.card-content {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
 }
- .product-image img{
+
+.label {
+  letter-spacing: 4px;
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+}
+
+.description {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.price-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.price {
+  font-size: 24px;
+  color: #2f6954;
+  font-weight: bold;
+}
+
+.original-price {
+  font-size: 14px;
+  text-decoration: line-through;
+  color: #999;
+}
+
+.cart-button {
+  background-color: #2f6954;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.3s;
+}
+
+.cart-button:hover {
+  background-color: #23513f;
+}
+
+.icon {
+  font-size: 16px;
+}
+
+/* ✅ Responsive Styles */
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+    max-width: 90%;
+  }
+
+  .card-image img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-top-left-radius: 1rem;
-    border-bottom-left-radius: 1rem;
-}
+    height: auto;
+  }
 
-.product-details {
-    flex: 1;
-    background: green;
-    padding: 4rem;
-}
+  .card-content {
+    padding: 20px;
+  }
 
+  h2 {
+    font-size: 20px;
+  }
+
+  .price {
+    font-size: 20px;
+  }
+
+  .cart-button {
+    width: 100%;
+    justify-content: center;
+  }
+}
 
 
 
