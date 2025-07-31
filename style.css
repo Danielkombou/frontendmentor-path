@@ -66,3 +66,30 @@ body {
     grid-column: span 3;
     /* grid-column: 3 / -1; */
 }
+
+
+.content {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: start;
+    gap: 1rem;
+    /* margin: 0 auto; */
+    width: 20%;
+}
+.image {
+    /* width: 1%; */
+    /* height: auto; */
+    padding: 1rem;
+    background: #ccc;
+    /* flex: 1; */
+}
+
+.subject {
+    /* flex: 2; */
+}
+
+.icon {
+    display: flex;
+    justify-content: space-between;
+}
