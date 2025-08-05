@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 :root{
     --bg-cream: hsl(30, 38%, 92%);
     --bg-white: hsl(0, 0%, 100%);
@@ -18,7 +19,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 1rem;
   margin: 0;
   min-height: 100vh;
 }
@@ -41,7 +42,7 @@ body {
 }
 
 .card-content {
-  padding: 30px;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
