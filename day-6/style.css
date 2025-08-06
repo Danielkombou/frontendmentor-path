@@ -17,7 +17,6 @@
 body {
     font-family: var(--font-family);
     background-color: var(--background-color);
-    /* color: var(--text-color); */
 }
 
 .main-content {
@@ -45,5 +44,6 @@ body {
 
 .text-content span {
     line-height: 1.6;
+    color: var(--text-color);
     /* margin: 0 auto; */
 }
